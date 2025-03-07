@@ -1,5 +1,4 @@
-
-import { Clock, Users, PresentationChart, Coffee, Utensils, MessageSquare } from 'lucide-react';
+import { Clock, Users, Presentation, Coffee, Utensils, MessageSquare } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -18,7 +17,7 @@ const agendaData = {
       time: '9:00 AM - 10:30 AM',
       title: 'Opening Keynote: The Future of DaVita',
       description: 'CEO keynote address on our vision, mission, and strategic direction for the coming year.',
-      icon: <PresentationChart className="w-5 h-5" />,
+      icon: <Presentation className="w-5 h-5" />,
       highlight: true
     },
     {
@@ -76,7 +75,7 @@ const agendaData = {
       time: '10:45 AM - 12:15 PM',
       title: 'Financial Performance Review',
       description: 'CFO presentation on our financial results, projections, and strategic investments.',
-      icon: <PresentationChart className="w-5 h-5" />,
+      icon: <Presentation className="w-5 h-5" />,
       highlight: true
     },
     {
@@ -97,7 +96,7 @@ const agendaData = {
       time: '3:15 PM - 4:30 PM',
       title: 'Closing Keynote: Our Path Forward',
       description: 'Inspirational closing address outlining our collective mission and next steps.',
-      icon: <PresentationChart className="w-5 h-5" />,
+      icon: <Presentation className="w-5 h-5" />,
       highlight: true
     },
     {
