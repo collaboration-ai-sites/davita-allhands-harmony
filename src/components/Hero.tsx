@@ -20,6 +20,16 @@ const Hero = () => {
                 ConvergeAI <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600">All-Hands</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-400">Summit</span>
               </h1>
+              
+              <div className="flex items-center mt-2 mb-6">
+                <p className="text-sm text-muted-foreground mr-2">Presented by</p>
+                <img 
+                  src="/lovable-uploads/03a30c33-a3fa-44dc-ae9b-1b87ed1eb0d7.png" 
+                  alt="DaVita Logo" 
+                  className="h-8" 
+                />
+              </div>
+              
               <p className="text-lg text-muted-foreground mt-6 leading-relaxed max-w-md">
                 Join us for a transformative day of AI innovation, collaboration, and vision-setting at our annual company-wide gathering in Salt Lake City.
               </p>
@@ -59,8 +69,8 @@ const Hero = () => {
           <div className="relative animate-slide-down">
             <div className="glass-panel rounded-2xl overflow-hidden relative z-20">
               <img 
-                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" 
-                alt="DaVita Conference" 
+                src="https://images.unsplash.com/photo-1560439514-4e9645039924?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" 
+                alt="Conference Attendees Collaborating" 
                 className="w-full h-[500px] object-cover object-center"
               />
             </div>

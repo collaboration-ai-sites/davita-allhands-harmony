@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <img 
-                src="/lovable-uploads/901bfe21-7f95-4f02-81ae-fbb8411b4f07.png" 
+                src="/lovable-uploads/03a30c33-a3fa-44dc-ae9b-1b87ed1eb0d7.png" 
                 alt="ConvergeAI Logo" 
                 className="h-16" 
               />
