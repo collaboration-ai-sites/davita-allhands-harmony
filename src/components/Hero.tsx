@@ -71,7 +71,7 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="relative mx-auto lg:mx-0 animate-slide-down max-w-md lg:max-w-none">
+          <div className="relative mx-auto lg:mx-0 animate-slide-down max-w-md lg:max-w-none -ml-16">
             {/* Decorative squares behind the image */}
             <div className="absolute -z-10 -top-6 -left-6 w-[70%] h-[70%] bg-gradient-to-tr from-purple-200/40 to-purple-300/30 rounded-lg rotate-6"></div>
             <div className="absolute -z-10 -bottom-6 -right-6 w-[70%] h-[70%] bg-gradient-to-bl from-cyan-200/40 to-cyan-300/30 rounded-lg -rotate-3"></div>
