@@ -1,12 +1,23 @@
 
 import { ChevronDown } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 const Hero = () => {
+  const [topSquarePosition, setTopSquarePosition] = useState(-40);
+  
+  useEffect(() => {
+    // Animate the top square to the left by 100px
+    setTopSquarePosition(-140);
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-to-b from-purple-50 to-white pt-16">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-purple-500/5 blur-3xl"></div>
-        <div className="absolute top-1/4 -left-40 w-96 h-96 rounded-full bg-cyan-500/5 blur-3xl"></div>
+        <div 
+          className="absolute top-1/4 w-96 h-96 rounded-full bg-cyan-500/5 blur-3xl transition-all duration-1000"
+          style={{ left: `${topSquarePosition}px` }}
+        ></div>
       </div>
       
       <div className="container mx-auto px-6 py-16 relative z-10">
