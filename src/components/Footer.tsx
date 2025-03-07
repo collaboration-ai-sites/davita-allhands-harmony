@@ -1,3 +1,4 @@
+
 import { ArrowUp } from 'lucide-react';
 
 const Footer = () => {
@@ -19,9 +20,9 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <img 
-                src="/lovable-uploads/a3903388-22e1-469f-b4d2-2107527918d2.png" 
-                alt="ConvergeAI Logo" 
-                className="h-16"
+                src="/lovable-uploads/86c8b395-8724-422e-b6aa-a0c2f953cad7.png" 
+                alt="DaVita Logo" 
+                className="h-16 max-w-[200px]"
               />
             </div>
             <p className="text-white/70 mb-6 max-w-sm">
@@ -74,7 +75,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/50 text-sm">&copy; 2023 ConvergeAI Inc. All rights reserved.</p>
+          <p className="text-white/50 text-sm">&copy; 2023 DaVita Inc. All rights reserved.</p>
           <button 
             onClick={scrollToTop}
             className="mt-4 md:mt-0 flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-cyan-500/20 to-purple-500/20 hover:from-cyan-500/30 hover:to-purple-500/30 transition-colors text-white"
