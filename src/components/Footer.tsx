@@ -22,7 +22,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/9a1f39f8-065c-466c-91da-af96144f567a.png" 
                 alt="DaVita Logo" 
-                className="h-16 max-w-[200px]"
+                className="h-16 w-auto object-contain"
               />
             </div>
             <p className="text-white/70 mb-6 max-w-sm">
