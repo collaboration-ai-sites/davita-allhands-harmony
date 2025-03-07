@@ -4,9 +4,14 @@ import { ChevronDown } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-to-b from-purple-50 to-white pt-16">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-purple-500/5 blur-3xl"></div>
+        <div className="absolute top-1/4 -left-40 w-96 h-96 rounded-full bg-cyan-500/5 blur-3xl"></div>
+      </div>
+      
       <div className="container mx-auto px-6 py-16 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-1 items-center">
-          <div className="space-y-6 max-w-xl animate-slide-up">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8 max-w-xl animate-slide-up">
             <div>
               <span className="inline-flex items-center rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-700 mb-6">
                 July 23, 2023
@@ -24,12 +29,12 @@ const Hero = () => {
                 />
               </div>
               
-              <p className="text-lg text-muted-foreground mt-4 leading-relaxed max-w-md">
+              <p className="text-lg text-muted-foreground mt-6 leading-relaxed max-w-md">
                 Join us for a transformative day of AI innovation, collaboration, and vision-setting at our annual company-wide gathering in Salt Lake City.
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 mt-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#register" 
                 className="inline-flex h-12 items-center justify-center rounded-md bg-gradient-to-r from-cyan-500 to-purple-600 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-gradient-to-r hover:from-cyan-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
@@ -44,7 +49,7 @@ const Hero = () => {
               </a>
             </div>
             
-            <div className="glass-panel p-4 rounded-lg max-w-sm mt-4">
+            <div className="glass-panel p-4 rounded-lg max-w-sm">
               <div className="flex gap-4 items-center">
                 <div className="bg-cyan-500/10 rounded-full p-3">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,16 +65,16 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="relative animate-slide-down hidden md:block">
-            <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-64 h-64 bg-purple-300/10 rounded-3xl transform rotate-12 filter blur-xl"></div>
-            <div className="absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4 w-64 h-64 bg-cyan-300/20 rounded-3xl transform -rotate-12 filter blur-xl"></div>
-            <div className="relative -ml-12 flex justify-center">
+          <div className="relative animate-slide-down">
+            <div className="glass-panel rounded-2xl overflow-hidden relative z-20">
               <img 
-                src="/lovable-uploads/9a1f39f8-065c-466c-91da-af96144f567a.png" 
+                src="/lovable-uploads/37f72eab-59d5-45a1-a4a1-40d177b922c9.png" 
                 alt="Conference Speaker" 
-                className="w-full max-w-md h-auto object-contain drop-shadow-xl"
+                className="w-full h-[500px] object-cover object-center"
               />
             </div>
+            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl z-10 opacity-20"></div>
+            <div className="absolute -top-6 -left-6 w-40 h-40 bg-gradient-to-r from-purple-600 to-orange-400 rounded-2xl z-10 opacity-20"></div>
           </div>
         </div>
       </div>
