@@ -31,7 +31,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/901bfe21-7f95-4f02-81ae-fbb8411b4f07.png" 
             alt="ConvergeAI Logo" 
-            className="h-10" 
+            className="h-20" // Changed from h-10 to h-20 to double the size
           />
         </div>
         <nav className="hidden md:flex items-center space-x-8">
