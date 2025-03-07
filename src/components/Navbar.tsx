@@ -29,9 +29,9 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <img 
-            src="/lovable-uploads/901bfe21-7f95-4f02-81ae-fbb8411b4f07.png" 
-            alt="ConvergeAI Logo" 
-            className="h-20" // Changed from h-10 to h-20 to double the size
+            src="/lovable-uploads/3e6e6e8a-eb4b-49df-999a-4d4f0feb1fbd.png" 
+            alt="ConvergeAI Summit Logo" 
+            className="h-16" 
           />
         </div>
         <nav className="hidden md:flex items-center space-x-8">
