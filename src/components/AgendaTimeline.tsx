@@ -103,7 +103,7 @@ const agendaData = {
     {
       time: '4:30 PM - 5:00 PM',
       title: 'Closing Remarks & Farewell',
-      description: 'Final thoughts, acknowledgments, and a look ahead to next year's conference.',
+      description: 'Final thoughts, acknowledgments, and a look ahead to next year\'s conference.',
       icon: <Users className="w-5 h-5" />,
       highlight: false
     }
