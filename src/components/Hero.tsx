@@ -66,11 +66,11 @@ const Hero = () => {
           </div>
           
           <div className="relative animate-slide-down">
-            <div className="glass-panel rounded-2xl overflow-hidden relative z-20">
+            <div className="relative z-20">
               <img 
                 src="/lovable-uploads/37f72eab-59d5-45a1-a4a1-40d177b922c9.png" 
                 alt="Conference Speaker" 
-                className="w-full h-[500px] object-cover object-center"
+                className="w-full h-[500px] object-contain"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl z-10 opacity-20"></div>
