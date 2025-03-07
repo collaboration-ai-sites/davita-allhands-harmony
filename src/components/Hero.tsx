@@ -72,6 +72,11 @@ const Hero = () => {
           </div>
           
           <div className="relative mx-auto lg:mx-0 animate-slide-down max-w-md lg:max-w-none">
+            {/* Decorative squares behind the image */}
+            <div className="absolute -z-10 -top-6 -left-6 w-[70%] h-[70%] bg-gradient-to-tr from-purple-200/40 to-purple-300/30 rounded-lg rotate-6"></div>
+            <div className="absolute -z-10 -bottom-6 -right-6 w-[70%] h-[70%] bg-gradient-to-bl from-cyan-200/40 to-cyan-300/30 rounded-lg -rotate-3"></div>
+            <div className="absolute -z-10 top-1/4 -right-4 w-[40%] h-[40%] bg-gradient-to-tr from-orange-200/30 to-orange-300/20 rounded-lg rotate-12"></div>
+            
             {/* Image with a clean look, centered within its grid cell */}
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
               <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 to-cyan-500/10 z-10"></div>
