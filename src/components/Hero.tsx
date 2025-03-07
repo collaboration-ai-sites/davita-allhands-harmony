@@ -71,33 +71,25 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="relative animate-slide-down">
-            {/* Decorative elements for the image */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-tl-3xl z-10 opacity-20"></div>
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-br-3xl z-10 opacity-20"></div>
-            
-            {/* Main image with dynamic styling */}
-            <div className="glass-panel rounded-2xl overflow-hidden relative z-20 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-xl">
-              <div className="relative">
-                {/* Gradient overlay for the image */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 via-transparent to-cyan-500/20 z-10"></div>
-                
-                <img 
-                  src="/lovable-uploads/202066d8-6dcb-4ee7-bc52-46129d29a2a2.png" 
-                  alt="Conference Speaker" 
-                  className="w-full h-[500px] object-cover object-center"
-                />
-                
-                {/* Image caption */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900/70 to-transparent p-6 text-white z-20">
-                  <p className="text-sm font-medium">Featuring keynote sessions from industry leaders</p>
-                </div>
-              </div>
+          <div className="relative mx-auto lg:mx-0 animate-slide-down max-w-md lg:max-w-none">
+            {/* Image with a clean look, centered within its grid cell */}
+            <div className="relative overflow-hidden rounded-2xl shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/10 to-cyan-500/10 z-10"></div>
+              
+              <img 
+                src="/lovable-uploads/202066d8-6dcb-4ee7-bc52-46129d29a2a2.png" 
+                alt="Conference Setting" 
+                className="w-full object-cover object-center h-[500px] transform transition-all duration-500 hover:scale-105"
+              />
+              
+              {/* Decorative elements */}
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-transparent to-black/10 z-10"></div>
             </div>
             
-            {/* Floating elements around the image */}
-            <div className="absolute -z-10 -top-8 right-8 w-16 h-16 bg-purple-500/30 rounded-full blur-md"></div>
-            <div className="absolute -z-10 bottom-12 -left-6 w-12 h-12 bg-cyan-500/30 rounded-full blur-md"></div>
+            {/* Floating colored elements */}
+            <div className="absolute -z-10 -top-8 -right-8 w-24 h-24 bg-cyan-500/20 rounded-full blur-md"></div>
+            <div className="absolute -z-10 bottom-12 -left-8 w-20 h-20 bg-purple-500/20 rounded-full blur-md"></div>
+            <div className="absolute -z-10 bottom-1/4 right-1/4 w-16 h-16 bg-orange-500/20 rounded-full blur-md"></div>
           </div>
         </div>
       </div>
