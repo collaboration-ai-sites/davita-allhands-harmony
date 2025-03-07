@@ -26,7 +26,7 @@ const Hero = () => {
                 <img 
                   src="/lovable-uploads/86c8b395-8724-422e-b6aa-a0c2f953cad7.png" 
                   alt="DaVita Logo" 
-                  className="h-8 w-auto object-contain -mb-0.5" 
+                  className="h-8 w-auto object-contain -mb-2" 
                 />
               </div>
               
