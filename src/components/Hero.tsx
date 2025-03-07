@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-to-b from-purple-50 to-white pt-16">
       <div className="container mx-auto px-6 py-16 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-6 items-center">
+        <div className="grid lg:grid-cols-2 gap-3 items-center">
           <div className="space-y-6 max-w-xl animate-slide-up">
             <div>
               <span className="inline-flex items-center rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-700 mb-6">
@@ -60,8 +60,8 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="relative animate-slide-down">
-            <div className="relative">
+          <div className="relative animate-slide-down hidden md:block lg:pl-0">
+            <div className="relative -ml-8">
               <img 
                 src="/lovable-uploads/37f72eab-59d5-45a1-a4a1-40d177b922c9.png" 
                 alt="Conference Speaker" 
