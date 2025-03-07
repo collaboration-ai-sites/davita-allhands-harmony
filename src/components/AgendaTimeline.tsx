@@ -5,6 +5,29 @@ import { cn } from '@/lib/utils';
 
 type Day = 'day1';
 
+const objectives = [
+  {
+    title: "Building Deeper Connections",
+    description: "Create meaningful relationships among attendees through structured networking and collaborative activities."
+  },
+  {
+    title: "Clarity on DaVita's Mission",
+    description: "Understand how our product team directly supports and advances DaVita's core mission and values."
+  },
+  {
+    title: "Introduction to Practical AI Solutions",
+    description: "Explore real-world AI applications that solve tangible business challenges within our organization."
+  },
+  {
+    title: "Actionable Outputs",
+    description: "Leave with next-step playbooks, real-time solutions, and implementation strategies you can apply immediately."
+  },
+  {
+    title: "Key Points from Leadership",
+    description: "Gain insights directly from company leadership on strategic direction and organizational priorities."
+  }
+];
+
 const agendaData = {
   day1: [
     {
@@ -78,6 +101,28 @@ const AgendaTimeline = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 max-w-2xl mx-auto">
+          <span className="inline-flex items-center rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-700 mb-6">
+            Conference Objectives
+          </span>
+          <h2 className="font-display text-4xl font-bold text-gray-800 mb-4">
+            Our Summit Goals
+          </h2>
+          <p className="text-muted-foreground mb-8">
+            We've designed this summit with clear objectives to ensure every attendee gains maximum value.
+          </p>
+          
+          {/* Objectives Grid */}
+          <div className="grid md:grid-cols-3 gap-6 mt-12 text-left max-w-5xl mx-auto">
+            {objectives.map((objective, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-subtle border border-purple-100 hover:shadow-glass transition-all">
+                <h3 className="font-medium text-lg text-gray-800 mb-2">{objective.title}</h3>
+                <p className="text-sm text-muted-foreground">{objective.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        <div className="text-center mb-16 max-w-2xl mx-auto mt-20">
           <span className="inline-flex items-center rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-700 mb-6">
             Conference Schedule
           </span>
