@@ -21,12 +21,12 @@ const Hero = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-600">All-Hands</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-orange-400">Summit</span>
               </h1>
               
-              <div className="flex items-center mt-2 mb-6">
+              <div className="flex items-end mt-2 mb-6">
                 <p className="text-sm text-muted-foreground mr-2">Presented by</p>
                 <img 
                   src="/lovable-uploads/86c8b395-8724-422e-b6aa-a0c2f953cad7.png" 
                   alt="DaVita Logo" 
-                  className="h-8 max-w-[120px]"
+                  className="h-8 w-auto object-contain"
                 />
               </div>
               
