@@ -2,9 +2,11 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
+import { AlignJustify } from 'lucide-react';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +22,10 @@ const Navbar = () => {
     };
   }, [scrolled]);
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <header 
       className={cn(
@@ -27,9 +33,10 @@ const Navbar = () => {
         scrolled ? "bg-white/80 backdrop-blur-md shadow-subtle" : "bg-transparent"
       )}
     >
-      <div className="container mx-auto flex items-center justify-between">
-        <div className="flex items-center space-x-2">
-          <Link to="/">
+      <div className="container mx-auto grid grid-cols-3 items-center">
+        {/* Left column - Logo */}
+        <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img 
               src="/lovable-uploads/e03f5efe-4964-4cc8-a4a5-7c9ce276769f.png" 
               alt="ConvergeAI Summit Logo" 
@@ -37,20 +44,74 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/#agenda" className="text-sm font-medium text-foreground/80 hover:text-cyan-500">Agenda</Link>
-          <Link to="/#location" className="text-sm font-medium text-foreground/80 hover:text-cyan-500">Location</Link>
-          <Link to="/#register" className="text-sm font-medium text-foreground/80 hover:text-cyan-500">Register</Link>
-          <Link to="/brand-toolkit" className="text-sm font-medium text-foreground/80 hover:text-cyan-500">Brand Toolkit</Link>
+        
+        {/* Center column - Navigation */}
+        <nav className="hidden md:flex items-center justify-center space-x-8">
+          <Link to="/#agenda" className="text-sm font-medium text-foreground/80 hover:text-cyan-500 transition-colors">Agenda</Link>
+          <Link to="/#location" className="text-sm font-medium text-foreground/80 hover:text-cyan-500 transition-colors">Location</Link>
+          <Link to="/#register" className="text-sm font-medium text-foreground/80 hover:text-cyan-500 transition-colors">Register</Link>
+          <Link to="/brand-toolkit" className="text-sm font-medium text-foreground/80 hover:text-cyan-500 transition-colors">Brand Toolkit</Link>
         </nav>
-        <div>
+        
+        {/* Right column - CTA button and mobile menu */}
+        <div className="flex items-center justify-end space-x-4">
           <Link 
             to="/#register" 
             className="hidden md:inline-flex h-9 items-center justify-center rounded-md bg-gradient-to-r from-cyan-500 to-purple-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gradient-to-r hover:from-cyan-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
           >
             Register Now
           </Link>
+          
+          {/* Mobile menu button */}
+          <button 
+            className="md:hidden flex items-center text-foreground/80 hover:text-cyan-500"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle mobile menu"
+          >
+            <AlignJustify size={24} />
+          </button>
         </div>
+      </div>
+      
+      {/* Mobile menu */}
+      <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'} absolute left-0 right-0 top-full bg-white shadow-md py-4 px-6 transition-all duration-300`}>
+        <nav className="flex flex-col space-y-4">
+          <Link 
+            to="/#agenda" 
+            className="text-sm font-medium text-foreground/80 hover:text-cyan-500 py-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Agenda
+          </Link>
+          <Link 
+            to="/#location" 
+            className="text-sm font-medium text-foreground/80 hover:text-cyan-500 py-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Location
+          </Link>
+          <Link 
+            to="/#register" 
+            className="text-sm font-medium text-foreground/80 hover:text-cyan-500 py-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Register
+          </Link>
+          <Link 
+            to="/brand-toolkit" 
+            className="text-sm font-medium text-foreground/80 hover:text-cyan-500 py-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Brand Toolkit
+          </Link>
+          <Link 
+            to="/#register" 
+            className="inline-flex h-9 items-center justify-center rounded-md bg-gradient-to-r from-cyan-500 to-purple-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gradient-to-r hover:from-cyan-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 mt-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Register Now
+          </Link>
+        </nav>
       </div>
     </header>
   );
