@@ -5,8 +5,8 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-to-b from-purple-50 to-white pt-16">
       <div className="container mx-auto px-6 py-16 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 max-w-xl animate-slide-up">
+        <div className="grid lg:grid-cols-2 gap-6 items-center">
+          <div className="space-y-6 max-w-xl animate-slide-up">
             <div>
               <span className="inline-flex items-center rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-700 mb-6">
                 July 23, 2023
@@ -24,12 +24,12 @@ const Hero = () => {
                 />
               </div>
               
-              <p className="text-lg text-muted-foreground mt-6 leading-relaxed max-w-md">
+              <p className="text-lg text-muted-foreground mt-4 leading-relaxed max-w-md">
                 Join us for a transformative day of AI innovation, collaboration, and vision-setting at our annual company-wide gathering in Salt Lake City.
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <a 
                 href="#register" 
                 className="inline-flex h-12 items-center justify-center rounded-md bg-gradient-to-r from-cyan-500 to-purple-600 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-gradient-to-r hover:from-cyan-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
@@ -44,7 +44,7 @@ const Hero = () => {
               </a>
             </div>
             
-            <div className="glass-panel p-4 rounded-lg max-w-sm">
+            <div className="glass-panel p-4 rounded-lg max-w-sm mt-4">
               <div className="flex gap-4 items-center">
                 <div className="bg-cyan-500/10 rounded-full p-3">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
