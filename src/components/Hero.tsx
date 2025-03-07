@@ -1,4 +1,3 @@
-
 import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
@@ -22,7 +21,7 @@ const Hero = () => {
               </h1>
               
               <div className="flex items-end mt-2 mb-6">
-                <p className="text-sm text-muted-foreground mr-2 mt-2">Presented by</p>
+                <p className="text-sm text-muted-foreground mr-2 -mt-2">Presented by</p>
                 <img 
                   src="/lovable-uploads/86c8b395-8724-422e-b6aa-a0c2f953cad7.png" 
                   alt="DaVita Logo" 
