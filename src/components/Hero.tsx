@@ -63,7 +63,7 @@ const Hero = () => {
           <div className="relative animate-slide-down hidden md:block">
             <div className="relative -ml-12 flex justify-center">
               <img 
-                src="/lovable-uploads/022d016a-b4d6-4388-8c4c-d095b65fd548.png" 
+                src="/lovable-uploads/9a1f39f8-065c-466c-91da-af96144f567a.png" 
                 alt="Conference Speaker" 
                 className="w-full max-w-md h-auto object-contain drop-shadow-xl"
               />
