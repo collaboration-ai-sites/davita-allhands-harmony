@@ -1,25 +1,9 @@
 
 import { ChevronDown } from 'lucide-react';
-import { useEffect, useState } from 'react';
 
 const Hero = () => {
-  const [topSquarePosition, setTopSquarePosition] = useState(-40);
-  
-  useEffect(() => {
-    // Animate the top square to the left by 100px
-    setTopSquarePosition(-140);
-  }, []);
-
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-to-b from-purple-50 to-white pt-16">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-purple-500/5 blur-3xl"></div>
-        <div 
-          className="absolute top-1/4 w-96 h-96 rounded-full bg-cyan-500/5 blur-3xl transition-all duration-1000"
-          style={{ left: `${topSquarePosition}px` }}
-        ></div>
-      </div>
-      
       <div className="container mx-auto px-6 py-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 max-w-xl animate-slide-up">
@@ -77,15 +61,14 @@ const Hero = () => {
           </div>
           
           <div className="relative animate-slide-down">
-            <div className="relative z-20">
+            <div className="relative">
               <img 
                 src="/lovable-uploads/37f72eab-59d5-45a1-a4a1-40d177b922c9.png" 
                 alt="Conference Speaker" 
-                className="w-full h-[500px] object-contain"
+                className="w-full h-[500px] object-contain drop-shadow-xl"
               />
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-purple-100/30 rounded-xl"></div>
             </div>
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl z-10 opacity-20"></div>
-            <div className="absolute -top-6 -left-6 w-40 h-40 bg-gradient-to-r from-purple-600 to-orange-400 rounded-2xl z-10 opacity-20"></div>
           </div>
         </div>
       </div>
