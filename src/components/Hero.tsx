@@ -23,11 +23,11 @@ const Hero = () => {
               
               <div className="flex items-center mt-2 mb-6">
                 <p className="text-sm text-muted-foreground mr-2">Presented by</p>
-                <img 
-                  src="/lovable-uploads/03a30c33-a3fa-44dc-ae9b-1b87ed1eb0d7.png" 
-                  alt="DaVita Logo" 
-                  className="h-8" 
-                />
+                <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-8">
+                  <path d="M32.5 5.5c-1.4 0-2.5 1.1-2.5 2.5s1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5-1.1-2.5-2.5-2.5zm0 4.8c-1.3 0-2.3-1-2.3-2.3s1-2.3 2.3-2.3 2.3 1 2.3 2.3-1 2.3-2.3 2.3z" fill="#000"/>
+                  <path d="M33.6 7.1l.5 1.6h-1l.5-1.6zm-2.2 0l.5 1.6h-1l.5-1.6zM37.7 5h-.9v5.1h3.6v-.8h-2.7V5zM41.8 5h.9v5.1h-.9V5zM45.1 5.8h-1.7V5h4.3v.8h-1.7v4.3h-.9V5.8zM55.4 5l-2 5.1h1l.4-1.1h2.1l.4 1.1h1L56.3 5h-.9zm-.3 3.2l.7-2.1.7 2.1h-1.4zM61.9 5l-1.4 3.8L59.1 5h-1l2 5.1h.9L63 5h-1.1zM66.2 5h-.9v5.1h3.6v-.8h-2.7V5zM26.4 16.3c0 2.1-1.7 3.8-3.8 3.8H4.5c-2.1 0-3.8-1.7-3.8-3.8V4.3c0-2.1 1.7-3.8 3.8-3.8h18.1c2.1 0 3.8 1.7 3.8 3.8v12z" fill="#000"/>
+                  <path d="M16.3 14.5L11.8 5H7.1v9.5h3.1V7.6l2.9 6.8h6.3v-2.4h-2.7v.5h-1.3v-1h4v-2.4h-2.4v-1h2.4V5.5h-4.8v6.6l-1.1-2.7h2.1V7h-3.2l-.6-1.5h4.4l4.5 9.5h-4.4z" fill="#fff"/>
+                </svg>
               </div>
               
               <p className="text-lg text-muted-foreground mt-6 leading-relaxed max-w-md">
