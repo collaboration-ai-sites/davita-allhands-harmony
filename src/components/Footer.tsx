@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <img 
-                src="/lovable-uploads/86c8b395-8724-422e-b6aa-a0c2f953cad7.png" 
+                src="/lovable-uploads/9a1f39f8-065c-466c-91da-af96144f567a.png" 
                 alt="DaVita Logo" 
                 className="h-16 max-w-[200px]"
               />
