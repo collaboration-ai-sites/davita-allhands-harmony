@@ -31,60 +31,53 @@ const objectives = [
 const agendaData = {
   day1: [
     {
-      time: '8:00 AM - 9:00 AM',
-      title: 'Registration & Breakfast',
-      description: 'Check-in at the Salt Lake City Convention Center, receive your conference materials, and enjoy a complimentary breakfast while networking with fellow AI professionals.',
-      icon: <Coffee className="w-5 h-5" />,
-      highlight: false
-    },
-    {
-      time: '9:00 AM - 10:30 AM',
-      title: 'Opening Keynote: The Future of ConvergeAI',
-      description: 'Our CEO presents an inspiring vision for the future of ConvergeAI and how our technologies are transforming industries through advanced machine learning and artificial intelligence solutions.',
+      time: '8:30 AM',
+      title: 'Joel Introduction',
+      description: 'Welcome by Lead Sponsor, setting the tone for the day. The sponsor shares their personal OKRs, + a relatable framework for achieving their person and company mission = creating a relatable foundation for the day\'s activities.',
       icon: <Presentation className="w-5 h-5" />,
       highlight: true
     },
     {
-      time: '10:45 AM - 12:15 PM',
-      title: 'Technical Deep Dive: New Model Architecture',
-      description: 'Our Chief AI Scientist presents the breakthroughs in our proprietary large language model architecture and how it achieves unprecedented performance across multiple domains.',
-      icon: <Code className="w-5 h-5" />,
+      time: '9:00 AM',
+      title: 'Mini exercise to T-UP the afternoon',
+      description: 'Option 1 - 5 Minute Memoirs & 6 word Bio. Attendees divide into groups of 4 or 5 with people they don\'t know. Each participant follows Henry David Thoreaux\'s process for clear communication.\n\nOption 2 - Charles Duhigg 35 week Best seller SuperCommunicators exercise. We think of a conversation as "one conversation" (social, practical and emotional) - if you are having different conversations, are you talking? Deep question: "When was the last time you cried in front of someone"',
+      icon: <Users className="w-5 h-5" />,
       highlight: false
     },
     {
-      time: '12:15 PM - 1:30 PM',
-      title: 'Networking Lunch',
-      description: 'Enjoy a gourmet lunch featuring local Utah cuisine while connecting with colleagues from across the company and discussing the morning\'s presentations.',
+      time: '9:30 AM',
+      title: 'Patient Speaker',
+      description: 'Hear directly from a patient about their experience and the impact of our services on their life.',
+      icon: <MessageSquare className="w-5 h-5" />,
+      highlight: true
+    },
+    {
+      time: '10:30 AM',
+      title: 'Voices of Senior Leadership',
+      description: 'Leadership panel sharing strategic vision, answering questions, and providing insights on organizational priorities and future direction.',
+      icon: <Presentation className="w-5 h-5" />,
+      highlight: false
+    },
+    {
+      time: '12:30 PM',
+      title: 'Lunch',
+      description: 'Engineered tables, but no work. Enjoy networking with colleagues in a relaxed environment.',
       icon: <Utensils className="w-5 h-5" />,
       highlight: false
     },
     {
-      time: '1:30 PM - 3:00 PM',
-      title: 'Breakout Sessions',
-      description: 'Choose from specialized tracks on generative AI applications, responsible AI development, and integration strategies for enterprise systems.',
-      icon: <Users className="w-5 h-5" />,
-      highlight: false
-    },
-    {
-      time: '3:15 PM - 4:15 PM',
-      title: 'ConvergeAI Platform Roadmap',
-      description: 'Our Product Team presents the upcoming features and improvements to the ConvergeAI platform, including new API capabilities and enhanced model customization options.',
-      icon: <Lightbulb className="w-5 h-5" />,
+      time: '1:30 PM',
+      title: 'BU AI Playbooks',
+      description: 'Each BU (or individual) submits biggest challenges ahead of event (reduce hospitalizations). Each challenge is tackled at 1 of 3 AI levels. Each team produces an AI Playbook and Roadmap to solve the biggest challenge they are working on. Voting on winners.',
+      icon: <Code className="w-5 h-5" />,
       highlight: true
     },
     {
-      time: '4:30 PM - 5:30 PM',
-      title: 'AI Market Trends & Competitive Analysis',
-      description: 'Our Market Intelligence team shares insights on industry trends, competitive landscape, and strategic opportunities for ConvergeAI in the rapidly evolving AI space.',
+      time: '3:30 PM',
+      title: 'Report Outs',
+      description: 'Winning teams share their learnings in rapid fire work to the group.',
       icon: <BarChart className="w-5 h-5" />,
       highlight: false
-    },
-    {
-      time: '6:00 PM - 8:00 PM',
-      title: 'Evening Reception',
-      description: 'Join us for an elegant reception at the SkyDeck rooftop lounge with panoramic views of Salt Lake City, featuring local cuisine, specialty cocktails, and live entertainment.',
-      icon: <Users className="w-5 h-5" />,
-      highlight: true
     }
   ]
 };
@@ -130,7 +123,7 @@ const AgendaTimeline = () => {
             A Full Day of Innovation and Collaboration
           </h2>
           <p className="text-muted-foreground">
-            Explore our carefully curated agenda designed to inform, inspire and connect our ConvergeAI community.
+            Explore our carefully curated agenda designed to inform, inspire and connect our team.
           </p>
         </div>
         
@@ -165,7 +158,7 @@ const AgendaTimeline = () => {
                     <span className="text-sm font-medium text-cyan-700">{item.time}</span>
                   </div>
                   <h3 className="text-xl font-medium mb-2 text-gray-800">{item.title}</h3>
-                  <p className="text-muted-foreground">{item.description}</p>
+                  <p className="text-muted-foreground whitespace-pre-line">{item.description}</p>
                   
                   {item.highlight && (
                     <div className="mt-4 inline-flex items-center rounded-full bg-purple-500/10 px-2.5 py-0.5 text-xs font-medium text-purple-600">
