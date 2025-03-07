@@ -11,6 +11,18 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 py-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="relative animate-slide-down">
+            <div className="relative z-20">
+              <img 
+                src="/lovable-uploads/37f72eab-59d5-45a1-a4a1-40d177b922c9.png" 
+                alt="Conference Speaker" 
+                className="w-full h-[500px] object-contain"
+              />
+            </div>
+            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl z-10 opacity-20"></div>
+            <div className="absolute -top-6 -left-6 w-40 h-40 bg-gradient-to-r from-purple-600 to-orange-400 rounded-2xl z-10 opacity-20"></div>
+          </div>
+          
           <div className="space-y-8 max-w-xl animate-slide-up">
             <div>
               <span className="inline-flex items-center rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-700 mb-6">
@@ -63,18 +75,6 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-          </div>
-          
-          <div className="relative animate-slide-down">
-            <div className="relative z-20">
-              <img 
-                src="/lovable-uploads/37f72eab-59d5-45a1-a4a1-40d177b922c9.png" 
-                alt="Conference Speaker" 
-                className="w-full h-[500px] object-contain"
-              />
-            </div>
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl z-10 opacity-20"></div>
-            <div className="absolute -top-6 -left-6 w-40 h-40 bg-gradient-to-r from-purple-600 to-orange-400 rounded-2xl z-10 opacity-20"></div>
           </div>
         </div>
       </div>
