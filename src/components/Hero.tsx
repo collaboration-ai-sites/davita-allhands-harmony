@@ -65,7 +65,7 @@ const Hero = () => {
               <img 
                 src="/lovable-uploads/022d016a-b4d6-4388-8c4c-d095b65fd548.png" 
                 alt="Conference Speaker" 
-                className="w-full max-w-md h-auto object-contain rounded-full drop-shadow-xl"
+                className="w-full max-w-md h-auto object-contain drop-shadow-xl"
               />
             </div>
           </div>
