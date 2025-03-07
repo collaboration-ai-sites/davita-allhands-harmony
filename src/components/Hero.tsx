@@ -61,6 +61,8 @@ const Hero = () => {
           </div>
           
           <div className="relative animate-slide-down hidden md:block">
+            <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-64 h-64 bg-purple-300/10 rounded-3xl transform rotate-12 filter blur-xl"></div>
+            <div className="absolute bottom-0 right-0 translate-y-1/4 translate-x-1/4 w-64 h-64 bg-cyan-300/20 rounded-3xl transform -rotate-12 filter blur-xl"></div>
             <div className="relative -ml-12 flex justify-center">
               <img 
                 src="/lovable-uploads/9a1f39f8-065c-466c-91da-af96144f567a.png" 
