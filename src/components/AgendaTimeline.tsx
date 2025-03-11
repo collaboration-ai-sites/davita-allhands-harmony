@@ -1,4 +1,3 @@
-
 import { Clock, Users, Presentation, Coffee, Utensils, MessageSquare, Code, BarChart, Lightbulb } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
@@ -7,76 +6,154 @@ type Day = 'day1';
 
 const objectives = [
   {
-    title: "Building Deeper Connections",
-    description: "Create meaningful relationships among attendees through structured networking and collaborative activities."
+    title: "Aligning with 2030 Ambitions",
+    description: "Connect DaVita’s mission with future strategic goals and the 2030 Ambition Areas."
   },
   {
-    title: "Clarity on DaVita's Mission",
-    description: "Understand how our product team directly supports and advances DaVita's core mission and values."
+    title: "Deepening Connections",
+    description: "Build meaningful relationships through structured networking and collaborative storytelling."
   },
   {
-    title: "Introduction to Practical AI Solutions",
-    description: "Explore real-world AI applications that solve tangible business challenges within our organization."
+    title: "Empowering with AI",
+    description: "Experience AI-enabled design sessions that transform ideas into actionable playbooks."
   },
   {
-    title: "Actionable Outputs",
-    description: "Leave with next-step playbooks, real-time solutions, and implementation strategies you can apply immediately."
+    title: "Leadership Insights",
+    description: "Hear directly from leaders on strategic priorities and how each function drives the 2030 Ambitions."
   },
   {
-    title: "Key Points from Leadership",
-    description: "Gain insights directly from company leadership on strategic direction and organizational priorities."
+    title: "Innovative Ideation",
+    description: "Engage in breakout sessions to craft tangible strategies and next steps for a brighter future."
   }
 ];
 
 const agendaData = {
   day1: [
     {
-      time: '8:30 AM',
-      title: 'Joel Introduction',
-      description: 'Welcome by Lead Sponsor, setting the tone for the day. The sponsor shares their personal OKRs, + a relatable framework for achieving their person and company mission = creating a relatable foundation for the day\'s activities.',
+      time: '07:30 AM',
+      title: 'Breakfast & Informal Networking',
+      description: 'A relaxed start to help participants settle in and connect organically.',
+      icon: <Coffee className="w-5 h-5" />,
+      highlight: false
+    },
+    {
+      time: '08:30 AM',
+      title: 'Introduction & Scene Setting',
+      description: `Led by Joel (“High Energy”) & Elise.
+Focus:
+- Connecting DaVita’s overall mission with the 2030 Ambitions.
+- Outlining how the day will unfold with a future vision.
+- Highlighting key areas such as reducing hospitalizations, home therapies, disease adjacency, and technology innovation.`,
       icon: <Presentation className="w-5 h-5" />,
       highlight: true
     },
     {
-      time: '9:00 AM',
-      title: 'Mini exercise to T-UP the afternoon',
-      description: 'Option 1 - 5 Minute Memoirs & 6 word Bio. Attendees divide into groups of 4 or 5 with people they don\'t know. Each participant follows Henry David Thoreaux\'s process for clear communication.\n\nOption 2 - Charles Duhigg 35 week Best seller SuperCommunicators exercise. We think of a conversation as "one conversation" (social, practical and emotional) - if you are having different conversations, are you talking? Deep question: "When was the last time you cried in front of someone"',
+      time: '08:50 AM',
+      title: 'Relationship Maker (“Super Communicator”)',
+      description: `Purpose: Build deeper connections and trust among participants.
+Format: Small groups of 4 with pre-engineered seating for diversity.
+Instructions:
+- Each person shares a brief (2–3 minute) personal story connecting them to DaVita’s mission or a 2030 Ambition.
+- Emphasize vulnerability and authenticity.
+Real-Time Feedback Loop: Participants submit “aha” moments via a digital form; AI aggregates common insights.`,
       icon: <Users className="w-5 h-5" />,
-      highlight: false
+      highlight: true
     },
     {
-      time: '9:30 AM',
+      time: '09:30 AM',
       title: 'Patient Speaker',
-      description: 'Hear directly from a patient about their experience and the impact of our services on their life.',
+      description: `Focus: Real-time motivation and human connection.
+Process:
+- A patient shares a compelling personal journey, emphasizing the impact of DaVita’s care.
+- Q&A + “Real-Time Love”: Participants submit notes of appreciation or questions via a digital form.
+Feedback Loop: Insights are collected and AI highlights 2–3 universal inspiration points.`,
       icon: <MessageSquare className="w-5 h-5" />,
       highlight: true
     },
     {
-      time: '10:30 AM',
-      title: 'Voices of Senior Leadership',
-      description: 'Leadership panel sharing strategic vision, answering questions, and providing insights on organizational priorities and future direction.',
-      icon: <Presentation className="w-5 h-5" />,
-      highlight: false
+      time: '10:15 AM',
+      title: 'Leadership Voices',
+      description: `Speakers: Leaders from Product, Technology, Strategy, and Operations.
+Purpose:
+- Showcase how each function is driving the 2030 Ambitions.
+- Clarify strategic priorities and major initiatives.
+Format:
+- Each leader presents for ~15 minutes with a rapid-fire Q&A.
+- AI aggregates questions and facilitates a lightning round.`,
+      icon: <Lightbulb className="w-5 h-5" />,
+      highlight: true
     },
     {
-      time: '12:30 PM',
-      title: 'Lunch',
-      description: 'Engineered tables, but no work. Enjoy networking with colleagues in a relaxed environment.',
+      time: '12:00 PM',
+      title: 'Non-Working Lunch',
+      description: `Purpose: Give participants a break to process the morning’s insights.
+Optional Activity: Use table cards for writing encouraging notes or personal reflections.`,
       icon: <Utensils className="w-5 h-5" />,
       highlight: false
     },
     {
-      time: '1:30 PM',
-      title: 'BU AI Playbooks',
-      description: 'Each BU (or individual) submits biggest challenges ahead of event (reduce hospitalizations). Each challenge is tackled at 1 of 3 AI levels. Each team produces an AI Playbook and Roadmap to solve the biggest challenge they are working on. Voting on winners.',
+      time: '01:00 PM',
+      title: 'Introduction to Afternoon Design Topics',
+      description: `Facilitators: Joel/Elise + AI Support Team.
+Purpose: Transition from morning inspiration to practical ideation.
+Theme: “2030 Ambitions in Action” – setting the stage for breakout sessions on AI prompting and strategic progress.`,
       icon: <Code className="w-5 h-5" />,
       highlight: true
     },
     {
-      time: '3:30 PM',
-      title: 'Report Outs',
-      description: 'Winning teams share their learnings in rapid fire work to the group.',
+      time: '01:15 PM',
+      title: 'Breakout Groups: AI-Enabled Design',
+      description: `Structure: Participants join Ambition-based groups (e.g., reducing hospitalizations, home therapies, etc.) with diverse roles.
+Process:
+- Quick “Prompting 101” if needed.
+- Scenario: “Imagine it’s June 25, 2026—DaVita has achieved major breakthroughs.”
+- Teams brainstorm, research with AI, and draft a “mini playbook” outlining key milestones and next steps.`,
+      icon: <Code className="w-5 h-5" />,
+      highlight: true
+    },
+    {
+      time: '02:45 PM',
+      title: 'Playback & Group Reporting',
+      description: `Format: 3–5 minute share-outs from each breakout group.
+Focus:
+- Biggest “aha” moments from AI research.
+- Key next steps or resources needed.
+- How insights tie back to the morning sessions.
+Digital submissions are aggregated by AI for group review.`,
       icon: <BarChart className="w-5 h-5" />,
+      highlight: false
+    },
+    {
+      time: '03:15 PM',
+      title: 'Short Break',
+      description: 'A 15-minute recharge before the final synthesis.',
+      icon: <Coffee className="w-5 h-5" />,
+      highlight: false
+    },
+    {
+      time: '03:30 PM',
+      title: 'AI-Assisted Closure',
+      description: `Purpose: Real-time synthesis of the day’s findings.
+Process:
+- AI displays top-level themes from breakout outputs.
+- Facilitated discussion on integrating insights into next steps.
+- Commitment Statements: Participants share one key action or insight.`,
+      icon: <Lightbulb className="w-5 h-5" />,
+      highlight: true
+    },
+    {
+      time: '05:00 PM',
+      title: 'Cocktail Hour & Voice of Honor',
+      description: `Purpose: Celebrate the day’s work and foster continued connection.
+Optional “Open Mic”: Share personal stories or shout-outs to individuals/teams making a difference.`,
+      icon: <Coffee className="w-5 h-5" />,
+      highlight: false
+    },
+    {
+      time: '08:00 PM',
+      title: 'Club DaVita (Evening Social)',
+      description: `Purpose: Provide a fun, informal atmosphere to strengthen relationships and close the day on a high note.`,
+      icon: <Coffee className="w-5 h-5" />,
       highlight: false
     }
   ]
@@ -95,13 +172,13 @@ const AgendaTimeline = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <span className="inline-flex items-center rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-700 mb-6">
-            Conference Objectives
+            Summit Objectives
           </span>
           <h2 className="font-display text-4xl font-bold text-gray-800 mb-4">
-            Our Summit Goals
+            2030 Ambition Summit Goals
           </h2>
           <p className="text-muted-foreground mb-8">
-            We've designed this summit with clear objectives to ensure every attendee gains maximum value.
+            We’ve designed this summit with clear objectives to ensure every attendee gains maximum value.
           </p>
           
           {/* Objectives Grid */}
@@ -117,21 +194,19 @@ const AgendaTimeline = () => {
         
         <div className="text-center mb-16 max-w-2xl mx-auto mt-20">
           <span className="inline-flex items-center rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-700 mb-6">
-            Conference Schedule
+            Summit Schedule
           </span>
           <h2 className="font-display text-4xl font-bold text-gray-800 mb-4">
-            A Full Day of Innovation and Collaboration
+            A Day of Ambition, AI, and Innovation
           </h2>
           <p className="text-muted-foreground">
-            Explore our carefully curated agenda designed to inform, inspire and connect our team.
+            Explore our full-day agenda designed to inspire, connect, and empower every participant.
           </p>
         </div>
         
         <div className="mb-10 flex justify-center">
           <div className="inline-flex p-1 rounded-lg bg-muted">
-            <button
-              className="px-5 py-2 text-sm font-medium rounded-md transition-all bg-white shadow-subtle text-purple-700"
-            >
+            <button className="px-5 py-2 text-sm font-medium rounded-md transition-all bg-white shadow-subtle text-purple-700">
               July 23 - Salt Lake City
             </button>
           </div>
