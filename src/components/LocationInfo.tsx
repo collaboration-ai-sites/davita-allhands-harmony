@@ -20,7 +20,7 @@ const LocationInfo = () => {
               </h2>
               <p className="text-muted-foreground mb-8">
                 Join us at the prestigious Salt Palace Convention Center, offering state-of-the-art 
-                facilities and convenient access from anywhere in Salt Lake City.
+                facilities and convenient access from anywhere in Salt Lake.
               </p>
             </div>
             
@@ -32,7 +32,7 @@ const LocationInfo = () => {
                 <div>
                   <h3 className="font-medium text-lg mb-1 text-gray-800">Salt Palace Convention Center</h3>
                   <p className="text-muted-foreground">
-                    100 S West Temple, Salt Lake City, UT 84101<br />
+                    100 S West Temple, Salt Lake, UT 84101<br />
                     Grand Ballroom - 2nd Floor
                   </p>
                 </div>
