@@ -19,8 +19,8 @@ const LocationInfo = () => {
                 Event Location
               </h2>
               <p className="text-muted-foreground mb-8">
-                Join us at the prestigious Salt Palace Convention Center, offering state-of-the-art 
-                facilities and convenient access from anywhere in Salt Lake.
+                Join us at the prestigious San Diego Convention Center, offering state-of-the-art 
+                facilities and convenient access from anywhere in San Diego.
               </p>
             </div>
             
@@ -30,9 +30,9 @@ const LocationInfo = () => {
                   <MapPin className="w-5 h-5 text-cyan-700" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-lg mb-1 text-gray-800">Salt Palace Convention Center</h3>
+                  <h3 className="font-medium text-lg mb-1 text-gray-800">San Diego Convention Center</h3>
                   <p className="text-muted-foreground">
-                    100 S West Temple, Salt Lake, UT 84101<br />
+                    111 W Harbor Dr, San Diego, CA 92101<br />
                     Grand Ballroom - 2nd Floor
                   </p>
                 </div>
@@ -58,7 +58,7 @@ const LocationInfo = () => {
                 <div>
                   <h3 className="font-medium text-lg mb-1 text-gray-800">Parking Information</h3>
                   <p className="text-muted-foreground">
-                    Convention Center Parking - $12/day<br />
+                    Convention Center Parking - $15/day<br />
                     Validation available for ConvergeAI employees
                   </p>
                 </div>
@@ -71,8 +71,8 @@ const LocationInfo = () => {
                 <div>
                   <h3 className="font-medium text-lg mb-1 text-gray-800">Public Transportation</h3>
                   <p className="text-muted-foreground">
-                    TRAX Light Rail: Temple Square Station<br />
-                    UTA Bus Routes: 2, 11, 200, 500
+                    San Diego Trolley: Convention Center Station<br />
+                    MTS Bus Routes: 3, 11, 901, 929
                   </p>
                 </div>
               </div>
@@ -84,19 +84,19 @@ const LocationInfo = () => {
               <div className="glass-panel rounded-2xl overflow-hidden relative z-20 shadow-glass">
                 <img 
                   src="https://images.unsplash.com/photo-1619827258582-4037309be961?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" 
-                  alt="Salt Palace Convention Center" 
+                  alt="San Diego Convention Center" 
                   className="w-full h-[400px] object-cover object-center"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8672196096747!2d-111.89379072356817!3d40.76685897138442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f50fbec6e9a7%3A0x3c0e751c10574bc2!2sSalt%20Palace%20Convention%20Center!5e0!3m2!1sen!2sus!4v1685449828461!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3357.1443617964654!2d-117.16373662392026!3d32.70666937985406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9535da87853b3%3A0xf8281b8dea8bcd97!2sSan%20Diego%20Convention%20Center!5e0!3m2!1sen!2sus!4v1626290754342!5m2!1sen!2sus"
                     width="100%"
                     height="400"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Salt Palace Convention Center Map"
+                    title="San Diego Convention Center Map"
                     className="opacity-0 absolute inset-0"
                   ></iframe>
                   <button 
